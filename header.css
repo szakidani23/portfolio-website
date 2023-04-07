@@ -1,0 +1,81 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+/*Header*/
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/background.png);
+  background-size: cover;
+  background-position:center;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo{
+  width: 140px;
+}
+
+.fa-solid.fa-bars{
+  cursor:pointer;
+}
+
+/*Menu links in 1 line*/
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color:white;
+  text-decoration:none;
+  font-size: 18px;
+  position:relative;        /*First relative pos then IN RELATIVE
+                               you put ABSOLUTE pos*/ 
+}
+
+/*Menu links HOVER EFFECT*/
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position:absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+
+/*Hi im' kevin text*/
+.header-text{
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+.header-text h1 span {
+  color:#ff004f;
+}
